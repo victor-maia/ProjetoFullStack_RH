@@ -1,0 +1,44 @@
+<div class="funcionario-box">
+    <button routerLink="/cadastro">Cadastrar novo funcionário</button>
+    <div class="input-box">
+        <label>Procurar</label>
+        <input type="text" placeholder="Qual registro está buscando?" (input)="search($event)">
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Departamento</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let funcionario of funcionarios">
+            <td>
+                <div *ngIf="funcionario.ativo; else inativo" class="active-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#28a745" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                </div>
+                <ng-template #inativo>
+                    <div class="inactive-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#dc3545" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                    </div>
+                </ng-template>
+            </td>
+            <td>{{ funcionario.nome }}</td>
+            <td>{{ funcionario.sobrenome }}</td>
+            <td>{{ funcionario.departamento }}</td>
+            <td>
+                <div class="buttonsControl">
+                    <button routerLink="/editar/{{funcionario.id}}" >Editar</button>
+                    <button routerLink="/detalhes/{{funcionario.id}}">Detalhes</button>
+                    <button routerLink="/excluir/{{funcionario.id}}" class="delete">Excluir</button>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
