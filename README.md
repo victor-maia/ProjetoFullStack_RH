@@ -61,6 +61,12 @@ Este projeto consiste em uma aplicação para o gerenciamento de informações d
 **Rota:** `/api/funcionario/{id}`  
 **Descrição:** Exclui o registro de um funcionário específico com base no ID fornecido. 🗑️
 
+## Tecnologias Utilizadas
+- C#
+- .NET
+- Angular
+- TypeScript
+
 ## Modelos de Dados 📊
 
 ### FuncionarioModel
