@@ -1,6 +1,33 @@
-# API de Gerenciamento de Funcionários 📋
+# Gerenciamento de Funcionários - Sistema Completo 📋👨‍💼👩‍💼
 
-Esta API permite gerenciar informações de funcionários, incluindo a criação, leitura, atualização, inativação e exclusão de registros.
+Este projeto consiste em uma aplicação para o gerenciamento de informações de funcionários, com backend desenvolvido em .NET e frontend em Angular. O sistema oferece funcionalidades para criar, visualizar, atualizar, inativar e excluir registros de funcionários.
+
+## Funcionalidades Principais 🛠️
+
+### 1. Visualizar Funcionários 📜
+   - Exibe uma lista de todos os funcionários registrados na base de dados.
+   - Rota: `/funcionarios`
+
+### 2. Detalhes do Funcionário 🔍
+   - Exibe os detalhes de um funcionário específico com base no ID fornecido.
+   - Rota: `/funcionarios/{id}`
+
+### 3. Cadastrar Novo Funcionário 📝
+   - Permite criar um novo registro de funcionário com os dados fornecidos.
+   - Rota: `/cadastro`
+
+### 4. Editar Funcionário ✏️
+   - Permite atualizar os detalhes de um funcionário existente.
+   - Rota: `/editar/{id}`
+
+### 5. Inativar Funcionário 🚫
+   - Permite inativar o registro de um funcionário na sessão de detalhes.
+   - Rota: `/funcionarios/inativar/{id}`
+
+### 6. Excluir Funcionário 🗑️
+   - Permite excluir o registro de um funcionário.
+   - Rota: `/funcionarios/excluir/{id}`
+
 
 ## Endpoints 🚀
 
