@@ -1,4 +1,4 @@
-# Gerenciamento de Funcionários - Sistema Completo 📋👨‍💼👩‍💼
+# Gerenciamento de Funcionários - Fullstack 📋👨‍💼👩‍💼
 
 Este projeto consiste em uma aplicação para o gerenciamento de informações de funcionários, com backend desenvolvido em .NET e frontend em Angular. O sistema oferece funcionalidades para criar, visualizar, atualizar, inativar e excluir registros de funcionários.
 
